@@ -12,7 +12,7 @@ class Dog < ActiveRecord::Base
   
   def save
     
-    sql = "INSERT INTO dogs (#{column_names}) VALUES (#{name}, #{breed})"
+    sql = "INSERT INTO dogs (name, breed) VALUES (#{name}, #{breed})"
   end 
   
   def self.update
