@@ -11,7 +11,6 @@ class Dog < ActiveRecord::Base
   end 
   
   def save
-    
     sql = "INSERT INTO dogs (name, breed) VALUES (#{name}, #{breed})"
   end 
   
