@@ -10,7 +10,7 @@ class Dog < ActiveRecord::Base
     # pup.save
   end 
   
-  def save
+  def self.save
     sql = "INSERT INTO dogs (name, breed) VALUES (#{name}, #{breed})"
     ActiveRecord::Base.connection.execute(sql)
     # @id ||= DB.execute("last_insert_rowid()")[0]["last_insert_rowid()"]
